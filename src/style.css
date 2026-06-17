@@ -1,0 +1,198 @@
+header {
+  background: linear-gradient(135deg, #00bcd4, #008fa1);
+  color: rgb(255, 0, 0);
+  padding: 22px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-style: italic;
+  font-style: oblique;
+}
+/*Logo*/
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/*Nav's*/
+nav a {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e90707;
+  border-bottom: 2px solid #e90707;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  min-height: calc(100vh - 150px);
+}
+aside {
+  background: rgb(221, 241, 245);
+  padding: 30px 10px;
+  border-right: 4px solid #00bcd4;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+aside h2 {
+  color: #008fa1;
+  margin-bottom: 18px;
+  font-size: 22px;
+}
+
+aside button {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  background: #008fa1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+}
+
+aside button:hover {
+  background: #d71920;
+transform: translateX(-5px);
+}
+
+main {
+  padding: 35px;
+}
+
+/*Bloco Grande*/
+.hero {
+  padding: 75px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+
+/*Botão 1*/
+.btn-principal {
+  background: #00bcd4;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.btn-principal:hover {
+  background: #a91418;
+  transform: scale(1.05);
+}
+
+/*Botão 2*/
+.btn-secundario {
+  background: #00bcd4;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secundario:hover {
+  background: #a91418;
+  transform: scale(1.05);
+}
+
+
+/*Caixas*/
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  border: 5px outset #00bcd4;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  color: #008fa1;
+  margin-bottom: 10px;
+  font-size: 21px;
+}
+
+.card p {
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.card button {
+  background: #00bcd4;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #d71920;
+}
+
+/*Informaçoes*/
+.info {
+  margin-top: 30px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  border: 2px solid #b2ebf2;
+}
+
+.info h2 {
+  color: #008fa1;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #008fa1;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  font-weight: bold;
+}

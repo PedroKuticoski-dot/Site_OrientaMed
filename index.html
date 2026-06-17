@@ -1,13 +1,93 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>site-orientamed</title>
+     <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OrintaMed - Atendimento Digital</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      }
+          
+  </style>
+  <link rel="stylesheet" href="style.css">
+ 
   </head>
   <body>
-    
     <script type="module" src="/src/main.js"></script>
+    <header class="">
+    <div class="logo">Portal-OrientaMed</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#Sobre-nos">Sobre-nos</a>
+      <a href="#contato">Contato</a>
+      <a href='cadastro.html'>Cadastro</a>
+    </nav>
+  </header>  <div class="container">
+    
+    <aside>
+      <h2>Menu Rápido</h2>
+      <button>Agendar Consulta</button>
+      <button>Cartão OrientaMed</button>
+      <button>Vacinação</button>
+      <button>Exames</button>
+      <button>Emergência</button>
+      <button>Vagas Abertas</button>
+    </aside>
+   
+    <main>
+  <section class="hero" id="inicio">
+    <h1>Bem-vindo ao Portal Digital do OrientaMed</h1>
+    <p>
+      Acesse serviços de saúde pública de forma simples, rápida e organizada. Consulte informações,
+      agende atendimentos e acompanhe seus serviços pelo portal.
+    </p>
+    <button class="btn-principal" onclick="mostrarMensagem('Consulta iniciada com sucesso!')">Iniciar Atendimento</button>
+    <button class="btn-secundario" onclick="mostrarMensagem('Você abriu a área de informações.')">Ver Informações</button>
+  </section>
+
+  <section class="cards" id="servicos">
+    <div class="card">
+      <h3>Consultas</h3>
+      <p>Agende consultas médicas em unidades de saúde próximas de você.</p>
+      <button>Acessar</button>
+    </div>
+
+    <div class="card">
+      <h3>Vacinas</h3>
+      <p>Confira campanhas de vacinação e acompanhe sua carteira vacinal.</p>
+      <button>Acessar</button>
+    </div>
+
+    <div class="card">
+      <h3>Exames</h3>
+      <p>Veja resultados, solicitações e orientações para exames.</p>
+      <button>Acessar</button>
+    </div>
+
+    <div class="card">
+      <h3>Medicamentos</h3>
+      <p>Consulte a disponibilidade de medicamentos na rede pública.</p>
+      <button>Acessar</button>
+    </div>
+  </section>
+
+  <section class="info">
+    <h2>Atendimento Humanizado</h2>
+    <p style="font-style: initial;">
+     <Strong> O OrientaMed garante atendimento universal, gratuito e igualitário para toda a população brasileira.
+      Este site é um modelo escolar/fictício inspirado em serviços digitais de saúde pública.</Strong>
+    </p>
+  </section>
+</main>
+ 
+  </div>  <footer id="contato">
+    <p>Portal OrientaMed Projeto escolar Digital: Saude e Bem-Estar para todos</p>
+  </footer>
   </body>
 </html>
