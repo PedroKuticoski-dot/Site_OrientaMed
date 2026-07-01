@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+/* ===== Cabeçalho ===== */
+
+header{
+    background: #10b4cd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo{
+    color: red;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+nav a{
+    color: red;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* ===== Layout ===== */
+
+.container{
+    display: flex;
+}
+
+/* ===== Menu Lateral ===== */
+
+aside{
+    width: 220px;
+    min-height: 100vh;
+    background: #d9edf3;
+    padding: 20px;
+    border-right: 3px solid #10b4cd;
+}
+
+aside h2{
+    color: #0085a3;
+    margin-bottom: 20px;
+}
+
+aside button{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #0a91aa;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+aside button:hover{
+    background: #08778b;
+}
+
+/* ===== Conteúdo ===== */
+
+main{
+    flex: 1;
+    padding: 40px;
+}
+
+.servicos{
+    background: white;
+    border-radius: 25px;
+    padding: 45px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+.servicos h1{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.servicos > p{
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* ===== Cards ===== */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card{
+    background: white;
+    border: 3px solid #10b4cd;
+    border-radius: 18px;
+    padding: 25px;
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+}
+
+.card h3{
+    color: #0085a3;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.card p{
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* ===== Rodapé ===== */
+
+footer{
+    margin-top: 40px;
+    background: #10b4cd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== Responsivo ===== */
+
+@media (max-width: 992px){
+
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a{
+        margin: 0;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    aside{
+        width: 100%;
+        min-height: auto;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .servicos{
+        padding: 30px;
+    }
+
+    .servicos h1{
+        font-size: 35px;
+    }
+
+    .logo{
+        font-size: 34px;
+    }
+
+}
